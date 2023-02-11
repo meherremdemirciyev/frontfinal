@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/bootstrap-extendedv1.css">
+        <link type="text/css" rel="stylesheet" href="/css/simplePagination.css"/>
+
+        <!-- <link rel="stylesheet" href="/css/paging.css"> -->
+        <!-- <link rel="stylesheet" href="/css/basket.css"> -->
+        <link rel="stylesheet" href="/css/about.css">
+        <script src="https://kit.fontawesome.com/1ec4b5e78d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="sidenav">
+        <div class="upper"><p>CLOSE</p><i class="fa-solid fa-xmark"></i></div>
+        <div class="menu">
+            <ul class="menudd">
+            
+                <li id="homepage"><a href=""><span class="navspans" >HOME</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    
+                </li>
+                <li id="shoppage"><a href=""><span class="navspans">SHOP</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    </li>
+                
+                <li id="productpage"><a href=""><span class="navspans">PRODUCT</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </li>
+                <li id="blogpage"><a href=""><span class="navspans">BLOG</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    </li>
+                <li id="pagepage"><a href=""><span class="navspans">PAGE</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    
+                </li>
+            </ul>
+            <div class="homepage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <a href="">Home Categories</a>
+                    <a href="/index.html">Home Classic</a>
+                    <a href="">Home Clean</a>
+                    <a href="">Home Elegant</a>
+                    <a href="">Home Modern</a>
+                    <a href="">Home Stronger</a>
+                    <a href="">Home Stylish</a>
+                    <a href="">Home Unique</a>
+                </div>
+            </div>
+            <div class="shoppage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <div>
+                        <h3>Shop Style</h3>
+                        <a href="/shop.html">Shop Standart</a>
+                        <a href="">Shop Full</a>
+                        <a href="">Shop Only Categories</a>
+                        <a href="">Shop Icon Categories</a>
+                        <a href="">Shop Image Categories</a>
+                        <a href="">Shop Sub Categories</a>
+                        <a href="">Shop Simple</a>
+                        <a href="">Shop Overlay Header</a>
+                        <a href="">Shop Sidebar</a>
+                        <a href="" >Shop List</a>
+                    </div>
+                    <div>
+                        <h3>Filter Layout</h3>
+                        <a href="">Sidebar</a>
+                        <a class="hotnav" href="">Filter Side Out</a>
+                        <a href="">Filter Dropdown</a>
+                        <a href="">Filter On Top</a>
+                        <a href="" class=" mb-20px">Filter Drawer</a>
+                        <h3>Shop Loader</h3>
+                        <a href="">Shop Pagination</a>
+                        <a class="hotnav" href="">Shop Infinity</a>
+                        <a href="">Shop Load More</a>
+                    </div>
+                    <div>
+                        <h3>Hover Style</h3>
+                        <a href="">Hover Style 1</a>
+                        <a href="">Hover Style 2</a>
+                        <a href="">Hover Style 3</a>
+                        <a class="hotnav" href="">Hover Style 4</a>
+                        <a class="hotnav" href="" class=" mb-20px">Hover Style 5</a>
+                        <h3>Woo Pages</h3>
+                        <a href="">Order Tracking</a>
+                        <a href="">Login</a>
+                        <a href="">Wishlist</a>
+                    </div>
+                    <div>
+                        <h3>Mini Cart</h3>
+                        <a href="">Side Out Light</a>
+                        <a href="">Side Out Dark</a>
+                        <a href="">Dropdown</a>
+                        <a href="" class=" mb-20px">Cart Page</a>
+                        <h3>Checkout Style</h3>
+                        <a href="">Checkout Classic</a>
+                        <a class="hotnav" href="">Checkout Mordern</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productpage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <div>
+                        <h3>Product Featured</h3>
+                        <a href="">Sticky ATC</a>
+                        <a href="">Video Inner</a>
+                        <a href="">Video Popup</a>
+                        <a href="">360 Degree</a>
+                        <a href="">Countdown</a>
+                        <a href="" class=" mb-20px">Buy Together</a>
+                        <h3>Description Style</h3>
+                        <a href="">Description Tab</a>
+                        <a href="">Description Accordion</a>
+                        <a href="" >Description Full Content</a>
+                        <a href="" >Description Vertical</a>
+                    </div>
+                    <div>
+                        <h3>Product Type</h3>
+                        <a href="">Simple Product</a>
+                        <a href="">Group Product</a>
+                        <a href="">Varieble Size Product</a>
+                        <a href="">Varieble Vintage Product</a>
+                        <a href="">External & Affiliate Product</a>
+                        <a href="" class=" mb-20px">Out of stock</a>
+                        <h3>Zoom Effect</h3>
+                        <a href="">Autozoom</a>
+                        <a class="hotnav" href="">Lens zoom</a>
+                        <a class="hotnav" href="">Magic zoom</a>
+                    </div>
+                    <div>
+                        <h3>Product Gallery</h3>
+                        <a href="">Scroll</a>
+                        <a href="">Left Thumbnail</a>
+                        <a href="">Right Thumbnail</a>
+                        <a href="">Bottom Thumbnail</a>
+                        <a href="">Outside Thumbnail</a>
+                        <a href="">Gird Style</a>
+                        <a href="">One Column</a>
+                        <a href="">Slider</a>
+                        <a href="">Lagre Gallery</a>
+                    </div>
+                    <div>
+                        <h3>Product Styles</h3>
+                        <a class="hotnav" href="">Clean</a>
+                        <a href="">Modern</a>
+                        <a class="hotnav" href="">Full Width</a>
+                        <a href="">Dark Background</a>
+                        <a href="">Light Background</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <div>
+                        <h3>Blog Layout</h3>
+                        <a href="">Blog Left Sidebar</a>
+                        <a href="">Blog Right Sidebar</a>
+                        <a class=" mb-20px" href="">Blog Without Sidebar</a>
+                        <h3>Blog Style</h3>
+                        <a href="">Blog List</a>
+                        <a href="">Blog Grid</a>
+                        <a href="" >Blog Modern</a>
+                        <a href="" >Blog Standar</a>
+                    </div>
+                    <div>
+                        <h3>Blog Format</h3>
+                        <a href="">Post format gallery</a>
+                        <a href="">Post format video</a>
+                        <a href="" class=" mb-20px">Post format audio</a>
+                        <h3>Post Layout</h3>
+                        <a href="">Sidebar</a>
+                        <a href="">One Column</a>
+                        <a href="">Prallax Image</a>
+                        <a href="">Simple Title</a>
+                        <a href="">Sticky Title</a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="pagepage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <a href="/about.html">About Us</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="">Faq</a>
+                    <a href="">Page 404</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="navs d-flex justify-content-center align-items-center">
+            <a href=""><span class="navspans">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+        </div> -->
+
+    </div>
+
+    <div id="bottommenu">
+        <div><i class="fa-solid fa-store"></i></div>
+        <div><i class="fa-regular fa-user"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div id="myBtn">
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="section-1-header">
+        <!-- <div class="container"> -->
+            <div class="head-2">
+                <div class="head-2-all d-flex justify-content-between align-items-center">
+                    <div class="menuhamb">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="h2left d-flex align-items-center">
+                        <div class="logo d-flex align-items-center">
+                            <a href="/index.html"><img width="400" height="78" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/logo-white.png.webp" alt="Kowine – Wine Store WooCommerce Theme" data-lazy-src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/logo.png.webp" data-ll-status="loaded" class="entered lazyloaded"></a>                    
+                        </div>
+                        
+                    </div>
+                    <div class="h2middle">
+                        <ul class="menudropdown">
+                            <li class="normal"><a href=""><span class="navspans" id="homepage">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="homedropdown">
+                                    <ul>
+                                        <li><a href="">Home Categories</a></li>
+                                        <li><a href="/index.html">Home Classic</a></li>
+                                        <li><a href="">Home Clean</a></li>
+                                        <li><a href="">Home Elegant</a></li>
+                                        <li><a href="">Home Modern</a></li>
+                                        <li><a href="">Home Stronger</a></li>
+                                        <li><a href="">Home Stylish</a></li>
+                                        <li><a href="">Home Unique</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="shoppage"><a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="shopdropdown">
+                                    <div class="ovrl">
+                                        <div>
+                                            <h3>Shop Style</h3>
+                                            <a href="/shop.html">Shop Standart</a>
+                                            <a href="">Shop Full</a>
+                                            <a href="">Shop Only Categories</a>
+                                            <a href="">Shop Icon Categories</a>
+                                            <a href="">Shop Image Categories</a>
+                                            <a href="">Shop Sub Categories</a>
+                                            <a href="">Shop Simple</a>
+                                            <a href="">Shop Overlay Header</a>
+                                            <a href="">Shop Sidebar</a>
+                                            <a href="" >Shop List</a>
+                                        </div>
+                                        <div>
+                                            <h3>Filter Layout</h3>
+                                            <a href="">Sidebar</a>
+                                            <a class="hotnav" href="">Filter Side Out</a>
+                                            <a href="">Filter Dropdown</a>
+                                            <a href="">Filter On Top</a>
+                                            <a href="" class=" mb-20px">Filter Drawer</a>
+                                            <h3>Shop Loader</h3>
+                                            <a href="">Shop Pagination</a>
+                                            <a class="hotnav" href="">Shop Infinity</a>
+                                            <a href="">Shop Load More</a>
+                                        </div>
+                                        <div>
+                                            <h3>Hover Style</h3>
+                                            <a href="">Hover Style 1</a>
+                                            <a href="">Hover Style 2</a>
+                                            <a href="">Hover Style 3</a>
+                                            <a class="hotnav" href="">Hover Style 4</a>
+                                            <a class="hotnav" href="" class=" mb-20px">Hover Style 5</a>
+                                            <h3>Woo Pages</h3>
+                                            <a href="">Order Tracking</a>
+                                            <a href="">Login</a>
+                                            <a href="">Wishlist</a>
+                                        </div>
+                                        <div>
+                                            <h3>Mini Cart</h3>
+                                            <a href="">Side Out Light</a>
+                                            <a href="">Side Out Dark</a>
+                                            <a href="">Dropdown</a>
+                                            <a href="" class=" mb-20px">Cart Page</a>
+                                            <h3>Checkout Style</h3>
+                                            <a href="">Checkout Classic</a>
+                                            <a class="hotnav" href="">Checkout Mordern</a>
+                                        </div>
+                                    </div>
+                                </div></li>
+                            
+                            <li id="productpage"><a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="productdropdown">
+                                    <div class="ovrl">
+                                        <div>
+                                            <h3>Product Featured</h3>
+                                            <a href="">Sticky ATC</a>
+                                            <a href="">Video Inner</a>
+                                            <a href="">Video Popup</a>
+                                            <a href="">360 Degree</a>
+                                            <a href="">Countdown</a>
+                                            <a href="" class=" mb-20px">Buy Together</a>
+                                            <h3>Description Style</h3>
+                                            <a href="">Description Tab</a>
+                                            <a href="">Description Accordion</a>
+                                            <a href="" >Description Full Content</a>
+                                            <a href="" >Description Vertical</a>
+                                        </div>
+                                        <div>
+                                            <h3>Product Type</h3>
+                                            <a href="">Simple Product</a>
+                                            <a href="">Group Product</a>
+                                            <a href="">Varieble Size Product</a>
+                                            <a href="">Varieble Vintage Product</a>
+                                            <a href="">External & Affiliate Product</a>
+                                            <a href="" class=" mb-20px">Out of stock</a>
+                                            <h3>Zoom Effect</h3>
+                                            <a href="">Autozoom</a>
+                                            <a class="hotnav" href="">Lens zoom</a>
+                                            <a class="hotnav" href="">Magic zoom</a>
+                                        </div>
+                                        <div>
+                                            <h3>Product Gallery</h3>
+                                            <a href="">Scroll</a>
+                                            <a href="">Left Thumbnail</a>
+                                            <a href="">Right Thumbnail</a>
+                                            <a href="">Bottom Thumbnail</a>
+                                            <a href="">Outside Thumbnail</a>
+                                            <a href="">Gird Style</a>
+                                            <a href="">One Column</a>
+                                            <a href="">Slider</a>
+                                            <a href="">Lagre Gallery</a>
+                                        </div>
+                                        <div>
+                                            <h3>Product Styles</h3>
+                                            <a class="hotnav" href="">Clean</a>
+                                            <a href="">Modern</a>
+                                            <a class="hotnav" href="">Full Width</a>
+                                            <a href="">Dark Background</a>
+                                            <a href="">Light Background</a>
+                                        </div>
+                                    </div>
+                                </div></li>
+                            </li>
+                            <li id="blogpage"><a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="blogdropdown">
+                                    <div class="ovrl">
+                                        <div>
+                                            <h3>Blog Layout</h3>
+                                            <a href="">Blog Left Sidebar</a>
+                                            <a href="">Blog Right Sidebar</a>
+                                            <a class=" mb-20px" href="">Blog Without Sidebar</a>
+                                            <h3>Blog Style</h3>
+                                            <a href="">Blog List</a>
+                                            <a href="">Blog Grid</a>
+                                            <a href="" >Blog Modern</a>
+                                            <a href="" >Blog Standar</a>
+                                        </div>
+                                        <div>
+                                            <h3>Blog Format</h3>
+                                            <a href="">Post format gallery</a>
+                                            <a href="">Post format video</a>
+                                            <a href="" class=" mb-20px">Post format audio</a>
+                                            <h3>Post Layout</h3>
+                                            <a href="">Sidebar</a>
+                                            <a href="">One Column</a>
+                                            <a href="">Prallax Image</a>
+                                            <a href="">Simple Title</a>
+                                            <a href="">Sticky Title</a>
+                                        </div>
+                                        <div>
+                                            <h3>Recent Post</h3>
+                                            <div class="post d-flex">
+                                                <div class="pl">
+                                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG1-720x484.jpg.webp" alt="">
+                                                </div>
+                                                <div class="pr">
+                                                    <a class="spa">Traveling Solo Is Awesome</a>
+                                                    <p class="spp">May 30, 2018 | 4 Comments</p>
+                                                </div>
+                                            </div>
+                                            <div class="post d-flex">
+                                                <div class="pl">
+                                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG2-720x484.jpg.webp" alt="">
+                                                </div>
+                                                <div class="pr">
+                                                    <a class="spa">A Beautiful Sunday Morning</a>
+                                                    <p class="spp">May 30, 2018 | 1 Comments</p>
+                                                </div>
+                                            </div>
+                                            <div class="post d-flex">
+                                                <div class="pl">
+                                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG3-720x484.jpg.webp" alt="">
+                                                </div>
+                                                <div class="pr">
+                                                    <a class="spa">Kitchen Inspired On Japanese</a>
+                                                    <p class="spp">May 30, 2018 | 1 Comments</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div></li>
+                            <li class="normal"><a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="pagedropdown">
+                                    <ul>
+                                        <li><a href="/about.html">About Us</a></li>
+                                        <li><a href="/contact.html">Contact</a></li>
+                                        <li><a href="">Faq</a></li>
+                                        <li><a href="">Page 404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <div class="navs d-flex justify-content-center align-items-center">
+                            <a href=""><span class="navspans">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+                        </div> -->
+
+                    </div>
+                    <div class="h2right d-flex align-items-center justify-content-end">
+                        <div class="login d-flex align-items-center">
+                            <a id="reslogin" href="#">LOGIN / REGISTER</a>
+                        </div>
+                        <div class="navs-2">
+                            <i id="resnav2ico" class="fa-solid fa-magnifying-glass"></i>
+                            <i id="resnav2ico" class="fa-regular fa-heart"></i>
+                            <a href="/basket.html"><i class="fa-solid fa-bag-shopping"><span id="shopcartcount">0</span></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </div>
+
+
+    <div class="section-1">
+        <div class="section-2-header ">
+            <!-- <div class="container"> -->
+                <div class="head-2">
+                    <div class="head-2-all d-flex justify-content-between align-items-center">
+                        <div class="menuhamb">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="h2left d-flex align-items-center">
+                            <div class="logo d-flex align-items-center">
+                                <a href="/index.html"><img width="400" height="78" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/logo-white.png.webp" alt="Kowine – Wine Store WooCommerce Theme" data-lazy-src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/logo.png.webp" data-ll-status="loaded" class="entered lazyloaded"></a>                    
+                            </div>
+                            
+                        </div>
+                        <div class="h2middle">
+                            <ul class="menudropdown">
+                                <li class="normal"><a href=""><span class="navspans2" id="homepage">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                    <div class="homedropdown">
+                                        <ul>
+                                            <li><a href="">Home Categories</a></li>
+                                            <li><a href="/index.html">Home Classic</a></li>
+                                            <li><a href="">Home Clean</a></li>
+                                            <li><a href="">Home Elegant</a></li>
+                                            <li><a href="">Home Modern</a></li>
+                                            <li><a href="">Home Stronger</a></li>
+                                            <li><a href="">Home Stylish</a></li>
+                                            <li><a href="">Home Unique</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="shoppage"><a href=""><span class="navspans2">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                    <div class="shopdropdown">
+                                        <div class="ovrl">
+                                            <div>
+                                                <h3>Shop Style</h3>
+                                                <a href="/shop.html">Shop Standart</a>
+                                                <a href="">Shop Full</a>
+                                                <a href="">Shop Only Categories</a>
+                                                <a href="">Shop Icon Categories</a>
+                                                <a href="">Shop Image Categories</a>
+                                                <a href="">Shop Sub Categories</a>
+                                                <a href="">Shop Simple</a>
+                                                <a href="">Shop Overlay Header</a>
+                                                <a href="">Shop Sidebar</a>
+                                                <a href="" >Shop List</a>
+                                            </div>
+                                            <div>
+                                                <h3>Filter Layout</h3>
+                                                <a href="">Sidebar</a>
+                                                <a class="hotnav" href="">Filter Side Out</a>
+                                                <a href="">Filter Dropdown</a>
+                                                <a href="">Filter On Top</a>
+                                                <a href="" class=" mb-20px">Filter Drawer</a>
+                                                <h3>Shop Loader</h3>
+                                                <a href="">Shop Pagination</a>
+                                                <a class="hotnav" href="">Shop Infinity</a>
+                                                <a href="">Shop Load More</a>
+                                            </div>
+                                            <div>
+                                                <h3>Hover Style</h3>
+                                                <a href="">Hover Style 1</a>
+                                                <a href="">Hover Style 2</a>
+                                                <a href="">Hover Style 3</a>
+                                                <a class="hotnav" href="">Hover Style 4</a>
+                                                <a class="hotnav" href="" class=" mb-20px">Hover Style 5</a>
+                                                <h3>Woo Pages</h3>
+                                                <a href="">Order Tracking</a>
+                                                <a href="">Login</a>
+                                                <a href="">Wishlist</a>
+                                            </div>
+                                            <div>
+                                                <h3>Mini Cart</h3>
+                                                <a href="">Side Out Light</a>
+                                                <a href="">Side Out Dark</a>
+                                                <a href="">Dropdown</a>
+                                                <a href="" class=" mb-20px">Cart Page</a>
+                                                <h3>Checkout Style</h3>
+                                                <a href="">Checkout Classic</a>
+                                                <a class="hotnav" href="">Checkout Mordern</a>
+                                            </div>
+                                        </div>
+                                    </div></li>
+                                
+                                <li id="productpage"><a href=""><span class="navspans2">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                    <div class="productdropdown">
+                                        <div class="ovrl">
+                                            <div>
+                                                <h3>Product Featured</h3>
+                                                <a href="">Sticky ATC</a>
+                                                <a href="">Video Inner</a>
+                                                <a href="">Video Popup</a>
+                                                <a href="">360 Degree</a>
+                                                <a href="">Countdown</a>
+                                                <a href="" class=" mb-20px">Buy Together</a>
+                                                <h3>Description Style</h3>
+                                                <a href="">Description Tab</a>
+                                                <a href="">Description Accordion</a>
+                                                <a href="" >Description Full Content</a>
+                                                <a href="" >Description Vertical</a>
+                                            </div>
+                                            <div>
+                                                <h3>Product Type</h3>
+                                                <a href="">Simple Product</a>
+                                                <a href="">Group Product</a>
+                                                <a href="">Varieble Size Product</a>
+                                                <a href="">Varieble Vintage Product</a>
+                                                <a href="">External & Affiliate Product</a>
+                                                <a href="" class=" mb-20px">Out of stock</a>
+                                                <h3>Zoom Effect</h3>
+                                                <a href="">Autozoom</a>
+                                                <a class="hotnav" href="">Lens zoom</a>
+                                                <a class="hotnav" href="">Magic zoom</a>
+                                            </div>
+                                            <div>
+                                                <h3>Product Gallery</h3>
+                                                <a href="">Scroll</a>
+                                                <a href="">Left Thumbnail</a>
+                                                <a href="">Right Thumbnail</a>
+                                                <a href="">Bottom Thumbnail</a>
+                                                <a href="">Outside Thumbnail</a>
+                                                <a href="">Gird Style</a>
+                                                <a href="">One Column</a>
+                                                <a href="">Slider</a>
+                                                <a href="">Lagre Gallery</a>
+                                            </div>
+                                            <div>
+                                                <h3>Product Styles</h3>
+                                                <a class="hotnav" href="">Clean</a>
+                                                <a href="">Modern</a>
+                                                <a class="hotnav" href="">Full Width</a>
+                                                <a href="">Dark Background</a>
+                                                <a href="">Light Background</a>
+                                            </div>
+                                        </div>
+                                    </div></li>
+                                </li>
+                                <li id="blogpage"><a href=""><span class="navspans2">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                    <div class="blogdropdown">
+                                        <div class="ovrl">
+                                            <div>
+                                                <h3>Blog Layout</h3>
+                                                <a href="">Blog Left Sidebar</a>
+                                                <a href="">Blog Right Sidebar</a>
+                                                <a class=" mb-20px" href="">Blog Without Sidebar</a>
+                                                <h3>Blog Style</h3>
+                                                <a href="">Blog List</a>
+                                                <a href="">Blog Grid</a>
+                                                <a href="" >Blog Modern</a>
+                                                <a href="" >Blog Standar</a>
+                                            </div>
+                                            <div>
+                                                <h3>Blog Format</h3>
+                                                <a href="">Post format gallery</a>
+                                                <a href="">Post format video</a>
+                                                <a href="" class=" mb-20px">Post format audio</a>
+                                                <h3>Post Layout</h3>
+                                                <a href="">Sidebar</a>
+                                                <a href="">One Column</a>
+                                                <a href="">Prallax Image</a>
+                                                <a href="">Simple Title</a>
+                                                <a href="">Sticky Title</a>
+                                            </div>
+                                            <div>
+                                                <h3>Recent Post</h3>
+                                                <div class="post d-flex">
+                                                    <div class="pl">
+                                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG1-720x484.jpg.webp" alt="">
+                                                    </div>
+                                                    <div class="pr">
+                                                        <a class="spa">Traveling Solo Is Awesome</a>
+                                                        <p class="spp">May 30, 2018 | 4 Comments</p>
+                                                    </div>
+                                                </div>
+                                                <div class="post d-flex">
+                                                    <div class="pl">
+                                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG2-720x484.jpg.webp" alt="">
+                                                    </div>
+                                                    <div class="pr">
+                                                        <a class="spa">A Beautiful Sunday Morning</a>
+                                                        <p class="spp">May 30, 2018 | 1 Comments</p>
+                                                    </div>
+                                                </div>
+                                                <div class="post d-flex">
+                                                    <div class="pl">
+                                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG3-720x484.jpg.webp" alt="">
+                                                    </div>
+                                                    <div class="pr">
+                                                        <a class="spa">Kitchen Inspired On Japanese</a>
+                                                        <p class="spp">May 30, 2018 | 1 Comments</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div></li>
+                                <li class="normal"><a href=""><span class="navspans2 cur">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                    <div class="pagedropdown">
+                                        <ul>
+                                            <li><a href="/about.html">About Us</a></li>
+                                            <li><a href="/contact.html">Contact</a></li>
+                                            <li><a href="">Faq</a></li>
+                                            <li><a href="">Page 404</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- <div class="navs d-flex justify-content-center align-items-center">
+                                <a href=""><span class="navspans">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            </div> -->
+    
+                        </div>
+                        <div class="h2right d-flex align-items-center justify-content-end">
+                            <div class="login d-flex align-items-center">
+                                <a id="reslogin" href="#">LOGIN / REGISTER</a>
+                            </div>
+                            <div class="navs-2">
+                                <i id="resnav2ico" class="fa-solid fa-magnifying-glass"></i>
+                                <i id="resnav2ico" class="fa-regular fa-heart"></i>
+                                <a href="/basket.html"><i class="fa-solid fa-bag-shopping"><span id="shopcartcount2">0</span></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+    
+        </div>
+        <div class="sec-all">
+            <div class="sectxts">
+                <h2>ABOUT US</h2>
+                <h1>Discover who<br>we are & what we do.</h1>
+                <div></div>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="mycontainer">
+            <div class="sec2-all">
+                <div class="sec2-left">
+                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/about-us-2.png.webp" alt="">
+                </div>
+                <div class="sec2-right">
+                    <h2>our story</h2>
+                    <h1>UK’s largest specialist<br>wine retailer.</h1>
+                    <p>Kowine is proud to be the UK’s largest specialist wine retailer. Originally founded as ‘Majestic Vintners’ by Sheldon Graner in 1980, the first warehouse was opened in Harringay, North London. There are now almost 200 stores in the UK and another two just across the Channel in France</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="mycontainer">
+            <div class="sec3-all">
+                <div class="sec3-top">
+                    <p>MEET OUR TEAMS</p>
+                </div>
+                <div class="sec3-bottom">
+                    <div class="slider1">
+                        <div>
+                            <div class="cnt">
+                                <div class="br"></div>
+                                <div class="pic">
+
+                                    <div class="pic-all">
+                                        <div class="icos">
+                                            <i class="fa-brands fa-facebook-f fb"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </div>
+                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/04/team4.jpg.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="cnttxt">
+                                    <h2>robert jamie</h2>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <div class="cnt">
+                                <div class="br"></div>
+                                <div class="pic">
+
+                                    <div class="pic-all">
+                                        <div class="icos">
+                                            <i class="fa-brands fa-facebook-f fb"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </div>
+                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/04/team4.jpg.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="cnttxt">
+                                    <h2>robert jamie</h2>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <div class="cnt">
+                                <div class="br"></div>
+                                <div class="pic">
+
+                                    <div class="pic-all">
+                                        <div class="icos">
+                                            <i class="fa-brands fa-facebook-f fb"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </div>
+                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/04/team4.jpg.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="cnttxt">
+                                    <h2>robert jamie</h2>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <div class="cnt">
+                                <div class="br"></div>
+                                <div class="pic">
+
+                                    <div class="pic-all">
+                                        <div class="icos">
+                                            <i class="fa-brands fa-facebook-f fb"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </div>
+                                        <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/04/team4.jpg.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="cnttxt">
+                                    <h2>robert jamie</h2>
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-4">
+        <div class="mycontainer">
+            <div class="s3-middle-bottom">
+                <div id="s3mball" class="s3mb-all d-flex">
+                    <div class="s3mb "><div class="topall">
+                        <div class="topsvg"><div class="svg"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 -57 512 512" width="512pt"><path d="m506.8125 95.679688-172-94.445313c-2.996094-1.644531-6.628906-1.644531-9.625 0l-64.679688 35.515625c-1.460937.40625-2.824218 1.152344-3.980468 2.183594l-103.339844 56.746094c-3.199219 1.757812-5.1875 5.117187-5.1875 8.765624v20.445313h-115.375c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h115.375v36h-57.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h57.332031v52h-84c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h84v20.449219c0 3.648437 1.988281 7.007812 5.1875 8.765625l172 94.445312c1.5.824219 3.15625 1.234375 4.8125 1.234375s3.3125-.410156 4.8125-1.234375l172-94.445312c3.199219-1.757813 5.1875-5.117188 5.1875-8.765625v-44.78125c0-5.519532-4.476562-10-10-10s-10 4.480468-10 10v38.863281l-152 83.464844v-166.078125l48.339844-26.542969v42.125c0 3.539063 1.867187 6.8125 4.910156 8.609375 1.566406.925781 3.328125 1.390625 5.089844 1.390625 1.65625 0 3.316406-.410156 4.820312-1.238281l36.859375-20.285156c3.191407-1.757813 5.175781-5.113282 5.175781-8.761719v-53.058594l46.804688-25.699219v47.210938c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-64.113282c0-3.648437-1.988281-7.007812-5.1875-8.765624zm-186.8125 275.207031-152-83.464844v-166.074219l152 83.460938zm10-183.402344-151.222656-83.039063 47.527344-26.097656 151.226562 83.039063zm68.308594-37.507813-151.226563-83.039062 16.394531-9 151.222657 83.039062zm26.886718 44.21875-16.855468 9.277344v-36.1875l16.855468-9.257812zm10.28125-64.628906-151.222656-83.039062 45.746094-25.117188 151.222656 83.035156zm0 0"></path><path d="m502 198.5625c-2.628906 0-5.210938 1.058594-7.070312 2.929688-1.859376 1.859374-2.929688 4.429687-2.929688 7.070312 0 2.628906 1.070312 5.210938 2.929688 7.070312 1.859374 1.859376 4.441406 2.929688 7.070312 2.929688s5.210938-1.070312 7.070312-2.929688c1.859376-1.859374 2.929688-4.441406 2.929688-7.070312 0-2.640625-1.070312-5.210938-2.929688-7.070312-1.859374-1.871094-4.441406-2.929688-7.070312-2.929688zm0 0"></path><path d="m24.332031 252.890625h-14.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h14.332031c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10zm0 0"></path><path d="m60.671875 190.890625c0-2.628906-1.070313-5.207031-2.933594-7.066406-1.859375-1.863281-4.4375-2.933594-7.066406-2.933594-2.632813 0-5.210937 1.070313-7.070313 2.933594-1.871093 1.859375-2.929687 4.4375-2.929687 7.066406 0 2.632813 1.058594 5.210937 2.929687 7.070313 1.859376 1.859374 4.4375 2.929687 7.070313 2.929687 2.628906 0 5.207031-1.066406 7.066406-2.929687 1.863281-1.859376 2.933594-4.4375 2.933594-7.070313zm0 0"></path></svg></div></div><div class="bottomtxt"><span>3 working days delivery</span><p>free shipping over $120s3mb </p></div></div>
+                    </div>
+                    <div class="s3mb "><div class="topall">
+                        <div class="topsvg"><div class="svg"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 -57 512 512" width="512pt"><path d="m506.8125 95.679688-172-94.445313c-2.996094-1.644531-6.628906-1.644531-9.625 0l-64.679688 35.515625c-1.460937.40625-2.824218 1.152344-3.980468 2.183594l-103.339844 56.746094c-3.199219 1.757812-5.1875 5.117187-5.1875 8.765624v20.445313h-115.375c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h115.375v36h-57.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h57.332031v52h-84c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h84v20.449219c0 3.648437 1.988281 7.007812 5.1875 8.765625l172 94.445312c1.5.824219 3.15625 1.234375 4.8125 1.234375s3.3125-.410156 4.8125-1.234375l172-94.445312c3.199219-1.757813 5.1875-5.117188 5.1875-8.765625v-44.78125c0-5.519532-4.476562-10-10-10s-10 4.480468-10 10v38.863281l-152 83.464844v-166.078125l48.339844-26.542969v42.125c0 3.539063 1.867187 6.8125 4.910156 8.609375 1.566406.925781 3.328125 1.390625 5.089844 1.390625 1.65625 0 3.316406-.410156 4.820312-1.238281l36.859375-20.285156c3.191407-1.757813 5.175781-5.113282 5.175781-8.761719v-53.058594l46.804688-25.699219v47.210938c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-64.113282c0-3.648437-1.988281-7.007812-5.1875-8.765624zm-186.8125 275.207031-152-83.464844v-166.074219l152 83.460938zm10-183.402344-151.222656-83.039063 47.527344-26.097656 151.226562 83.039063zm68.308594-37.507813-151.226563-83.039062 16.394531-9 151.222657 83.039062zm26.886718 44.21875-16.855468 9.277344v-36.1875l16.855468-9.257812zm10.28125-64.628906-151.222656-83.039062 45.746094-25.117188 151.222656 83.035156zm0 0"></path><path d="m502 198.5625c-2.628906 0-5.210938 1.058594-7.070312 2.929688-1.859376 1.859374-2.929688 4.429687-2.929688 7.070312 0 2.628906 1.070312 5.210938 2.929688 7.070312 1.859374 1.859376 4.441406 2.929688 7.070312 2.929688s5.210938-1.070312 7.070312-2.929688c1.859376-1.859374 2.929688-4.441406 2.929688-7.070312 0-2.640625-1.070312-5.210938-2.929688-7.070312-1.859374-1.871094-4.441406-2.929688-7.070312-2.929688zm0 0"></path><path d="m24.332031 252.890625h-14.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h14.332031c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10zm0 0"></path><path d="m60.671875 190.890625c0-2.628906-1.070313-5.207031-2.933594-7.066406-1.859375-1.863281-4.4375-2.933594-7.066406-2.933594-2.632813 0-5.210937 1.070313-7.070313 2.933594-1.871093 1.859375-2.929687 4.4375-2.929687 7.066406 0 2.632813 1.058594 5.210937 2.929687 7.070313 1.859376 1.859374 4.4375 2.929687 7.070313 2.929687 2.628906 0 5.207031-1.066406 7.066406-2.929687 1.863281-1.859376 2.933594-4.4375 2.933594-7.070313zm0 0"></path></svg></div></div><div class="bottomtxt"><span>3 working days delivery</span><p>free shipping over $120s3mb </p></div></div>
+                    </div>
+                    <div class="s3mb "><div class="topall">
+                        <div class="topsvg"><div class="svg"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 -57 512 512" width="512pt"><path d="m506.8125 95.679688-172-94.445313c-2.996094-1.644531-6.628906-1.644531-9.625 0l-64.679688 35.515625c-1.460937.40625-2.824218 1.152344-3.980468 2.183594l-103.339844 56.746094c-3.199219 1.757812-5.1875 5.117187-5.1875 8.765624v20.445313h-115.375c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h115.375v36h-57.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h57.332031v52h-84c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h84v20.449219c0 3.648437 1.988281 7.007812 5.1875 8.765625l172 94.445312c1.5.824219 3.15625 1.234375 4.8125 1.234375s3.3125-.410156 4.8125-1.234375l172-94.445312c3.199219-1.757813 5.1875-5.117188 5.1875-8.765625v-44.78125c0-5.519532-4.476562-10-10-10s-10 4.480468-10 10v38.863281l-152 83.464844v-166.078125l48.339844-26.542969v42.125c0 3.539063 1.867187 6.8125 4.910156 8.609375 1.566406.925781 3.328125 1.390625 5.089844 1.390625 1.65625 0 3.316406-.410156 4.820312-1.238281l36.859375-20.285156c3.191407-1.757813 5.175781-5.113282 5.175781-8.761719v-53.058594l46.804688-25.699219v47.210938c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-64.113282c0-3.648437-1.988281-7.007812-5.1875-8.765624zm-186.8125 275.207031-152-83.464844v-166.074219l152 83.460938zm10-183.402344-151.222656-83.039063 47.527344-26.097656 151.226562 83.039063zm68.308594-37.507813-151.226563-83.039062 16.394531-9 151.222657 83.039062zm26.886718 44.21875-16.855468 9.277344v-36.1875l16.855468-9.257812zm10.28125-64.628906-151.222656-83.039062 45.746094-25.117188 151.222656 83.035156zm0 0"></path><path d="m502 198.5625c-2.628906 0-5.210938 1.058594-7.070312 2.929688-1.859376 1.859374-2.929688 4.429687-2.929688 7.070312 0 2.628906 1.070312 5.210938 2.929688 7.070312 1.859374 1.859376 4.441406 2.929688 7.070312 2.929688s5.210938-1.070312 7.070312-2.929688c1.859376-1.859374 2.929688-4.441406 2.929688-7.070312 0-2.640625-1.070312-5.210938-2.929688-7.070312-1.859374-1.871094-4.441406-2.929688-7.070312-2.929688zm0 0"></path><path d="m24.332031 252.890625h-14.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h14.332031c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10zm0 0"></path><path d="m60.671875 190.890625c0-2.628906-1.070313-5.207031-2.933594-7.066406-1.859375-1.863281-4.4375-2.933594-7.066406-2.933594-2.632813 0-5.210937 1.070313-7.070313 2.933594-1.871093 1.859375-2.929687 4.4375-2.929687 7.066406 0 2.632813 1.058594 5.210937 2.929687 7.070313 1.859376 1.859374 4.4375 2.929687 7.070313 2.929687 2.628906 0 5.207031-1.066406 7.066406-2.929687 1.863281-1.859376 2.933594-4.4375 2.933594-7.070313zm0 0"></path></svg></div></div><div class="bottomtxt"><span>3 working days delivery</span><p>free shipping over $120s3mb </p></div></div>
+                    </div>
+                    <div class="s3mb "><div class="topall">
+                        <div class="topsvg"><div class="svg"><svg xmlns="http://www.w3.org/2000/svg" height="512pt" viewBox="0 -57 512 512" width="512pt"><path d="m506.8125 95.679688-172-94.445313c-2.996094-1.644531-6.628906-1.644531-9.625 0l-64.679688 35.515625c-1.460937.40625-2.824218 1.152344-3.980468 2.183594l-103.339844 56.746094c-3.199219 1.757812-5.1875 5.117187-5.1875 8.765624v20.445313h-115.375c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h115.375v36h-57.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h57.332031v52h-84c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h84v20.449219c0 3.648437 1.988281 7.007812 5.1875 8.765625l172 94.445312c1.5.824219 3.15625 1.234375 4.8125 1.234375s3.3125-.410156 4.8125-1.234375l172-94.445312c3.199219-1.757813 5.1875-5.117188 5.1875-8.765625v-44.78125c0-5.519532-4.476562-10-10-10s-10 4.480468-10 10v38.863281l-152 83.464844v-166.078125l48.339844-26.542969v42.125c0 3.539063 1.867187 6.8125 4.910156 8.609375 1.566406.925781 3.328125 1.390625 5.089844 1.390625 1.65625 0 3.316406-.410156 4.820312-1.238281l36.859375-20.285156c3.191407-1.757813 5.175781-5.113282 5.175781-8.761719v-53.058594l46.804688-25.699219v47.210938c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-64.113282c0-3.648437-1.988281-7.007812-5.1875-8.765624zm-186.8125 275.207031-152-83.464844v-166.074219l152 83.460938zm10-183.402344-151.222656-83.039063 47.527344-26.097656 151.226562 83.039063zm68.308594-37.507813-151.226563-83.039062 16.394531-9 151.222657 83.039062zm26.886718 44.21875-16.855468 9.277344v-36.1875l16.855468-9.257812zm10.28125-64.628906-151.222656-83.039062 45.746094-25.117188 151.222656 83.035156zm0 0"></path><path d="m502 198.5625c-2.628906 0-5.210938 1.058594-7.070312 2.929688-1.859376 1.859374-2.929688 4.429687-2.929688 7.070312 0 2.628906 1.070312 5.210938 2.929688 7.070312 1.859374 1.859376 4.441406 2.929688 7.070312 2.929688s5.210938-1.070312 7.070312-2.929688c1.859376-1.859374 2.929688-4.441406 2.929688-7.070312 0-2.640625-1.070312-5.210938-2.929688-7.070312-1.859374-1.871094-4.441406-2.929688-7.070312-2.929688zm0 0"></path><path d="m24.332031 252.890625h-14.332031c-5.523438 0-10 4.480469-10 10 0 5.523437 4.476562 10 10 10h14.332031c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10zm0 0"></path><path d="m60.671875 190.890625c0-2.628906-1.070313-5.207031-2.933594-7.066406-1.859375-1.863281-4.4375-2.933594-7.066406-2.933594-2.632813 0-5.210937 1.070313-7.070313 2.933594-1.871093 1.859375-2.929687 4.4375-2.929687 7.066406 0 2.632813 1.058594 5.210937 2.929687 7.070313 1.859376 1.859374 4.4375 2.929687 7.070313 2.929687 2.628906 0 5.207031-1.066406 7.066406-2.929687 1.863281-1.859376 2.933594-4.4375 2.933594-7.070313zm0 0"></path></svg></div></div><div class="bottomtxt"><span>3 working days delivery</span><p>free shipping over $120s3mb </p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-5">
+        <div class="mycontainer">
+            <div class="sec5-all">
+                <div class="sec5-top">
+                    <p>OUR HAPPY CLIENTS</p>
+                </div>
+                <div class="sec5-middle">
+
+                </div>
+                <div class="sec5-bottom">
+                    <div class="slider2">
+                        <div>
+                            <div class="cnt2">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+                                <div class="s5txt1">
+                                    “Amazing piece of history”
+                                </div>
+                                <div class="s5txt2">
+                                    Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms... 
+                                </div>
+                                <div class="s5pic">
+                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2020/06/tesm-1.jpg.webp" alt="">
+                                </div>
+                                <div class="s5txt3">
+                                    Ann Smith
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cnt2">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+                                <div class="s5txt1">
+                                    “Amazing piece of history”
+                                </div>
+                                <div class="s5txt2">
+                                    Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms... 
+                                </div>
+                                <div class="s5pic">
+                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2020/06/tesm-1.jpg.webp" alt="">
+                                </div>
+                                <div class="s5txt3">
+                                    Ann Smith
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cnt2">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+                                <div class="s5txt1">
+                                    “Amazing piece of history”
+                                </div>
+                                <div class="s5txt2">
+                                    Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms... 
+                                </div>
+                                <div class="s5pic">
+                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2020/06/tesm-1.jpg.webp" alt="">
+                                </div>
+                                <div class="s5txt3">
+                                    Ann Smith
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cnt2">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+                                <div class="s5txt1">
+                                    “Amazing piece of history”
+                                </div>
+                                <div class="s5txt2">
+                                    Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms... 
+                                </div>
+                                <div class="s5pic">
+                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2020/06/tesm-1.jpg.webp" alt="">
+                                </div>
+                                <div class="s5txt3">
+                                    Ann Smith
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-6">
+        <div class="mycontainer">
+            <div class="s6-middle">
+                <div class="s6m-all d-flex">
+                    <div ><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/brand1.jpg.webp" alt=""></div>
+                    <div ><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/brand1.jpg.webp" alt=""></div>
+                    <div ><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/brand1.jpg.webp" alt=""></div>
+                    <div ><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/brand1.jpg.webp" alt=""></div>
+                    <div ><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/brand1.jpg.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-mail">
+        <div class="mycontainer">
+            <div class="sm-all">
+                <div class="sm-left">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <div class="etxts">
+                        <h2>SIGN UP FOR OUR NEWLETTERS</h2>
+                        <p>Keep updated with the latest and greatest from our wonderful world of wine.</p>
+                    </div>
+                </div>
+                <div class="sm-right">
+                    <div class="smr-all">
+                        <input type="email" placeholder="Your email adress...">
+                        <button>SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="foot-all ">
+            <div class="mycontainer d-flex justify-content-between">
+                <div class="contactus">
+                    <h2>CONTACT US</h2>
+                    <div class="ftxt">
+                        <p><strong>Head Office:</strong> 26 Wyle Cop, Shrewsbury,</p>
+                    <p>Shropshire, SY1 1XD</p>
+                    <p><strong>Tel:</strong> 01743 234500</p>
+                    <p><strong>Email:</strong> support&kowine.com</p>
+                    </div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                
+                </div>
+                <div class="customerservice">
+                    <h2>CUSTOMER SERVICES</h2>
+                    <a href="">Contact & FA</a>
+                    <a href="">Track Your Orde</a>
+                    <a href="">Returns & Refunds</a>
+                    <a href="">Shipping & Deliver</a>
+                    <a href="">Interest Free Financ</a>
+                    <a href="">Cipmoney</a>
+                </div>
+                <div class="aboutus">
+                    <h2>ABOUT US</h2>
+                    <a href="">
+                        Our story
+                    </a><a href="">
+                        The team
+                    </a><a href="">
+                        The team
+                    </a><a href="">
+                        Jobs
+                    </a><a href="">
+                        Blog
+                    </a><a href="">
+                        Contact
+                    </a>
+                </div>
+                <div class="discovermore">
+                    <h2>DISCOVER MORE</h2>
+                    <a href="">
+                        Twiter
+                    </a><a href="">
+                        Facebook
+                    </a><a href="">
+                        Instagram
+                    </a><a href="">
+                        Pinterest
+                    </a><a href="">
+                        Jobs
+                    </a><a href="">
+                        Contact
+                    </a>
+                </div>
+        
+            </div>
+        </div>
+        <div class="foot-bottom ">
+            <div class="mycontainer d-flex justify-content-between">
+                <div class="fbl">
+                    <p>Copyright © 2021 Kowines Ltd.</p>
+                </div>
+                <div class="fbr">
+                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2020/06/payment.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.simplePagination.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="/js/basket.js"></script> -->
+    <!-- <script src="/js/script.js"></script> -->
+    <script src="/js/about.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+            <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+            <link rel="stylesheet" href="/css/bootstrap-extendedv1.css">
+            <link type="text/css" rel="stylesheet" href="/css/simplePagination.css"/>
+    
+            <!-- <link rel="stylesheet" href="/css/paging.css"> -->
+            <!-- <link rel="stylesheet" href="/css/basket.css"> -->
+            <link rel="stylesheet" href="/css/detail.css">
+            <script src="https://kit.fontawesome.com/1ec4b5e78d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="alert" style="transition: .5s; position: fixed;z-index: 123123; display: inline-block; padding: 5px 10px; bottom: 20px; right: -500px; background-color: #c0a483; color: white;">
+        <p></p>
+    </div>
+    <div id="sidenav">
+        <div class="upper"><p>CLOSE</p><i class="fa-solid fa-xmark"></i></div>
+        <div class="menu">
+            <ul class="menudd">
+            
+                <li id="homepage"><a href=""><span class="navspans" >HOME</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    
+                </li>
+                <li id="shoppage"><a href=""><span class="navspans">SHOP</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    </li>
+                
+                <li id="productpage"><a href=""><span class="navspans">PRODUCT</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </li>
+                <li id="blogpage"><a href=""><span class="navspans">BLOG</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    </li>
+                <li id="pagepage"><a href=""><span class="navspans">PAGE</span></a><i onclick="NavOpener(this)" class="fa-solid fa-chevron-right"></i>
+                    
+                </li>
+            </ul>
+            <div class="homepage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <a href="">Home Categories</a>
+                    <a href="/index.html">Home Classic</a>
+                    <a href="">Home Clean</a>
+                    <a href="">Home Elegant</a>
+                    <a href="">Home Modern</a>
+                    <a href="">Home Stronger</a>
+                    <a href="">Home Stylish</a>
+                    <a href="">Home Unique</a>
+                </div>
+            </div>
+            <div class="shoppage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <div>
+                        <h3>Shop Style</h3>
+                        <a href="/shop.html">Shop Standart</a>
+                        <a href="">Shop Full</a>
+                        <a href="">Shop Only Categories</a>
+                        <a href="">Shop Icon Categories</a>
+                        <a href="">Shop Image Categories</a>
+                        <a href="">Shop Sub Categories</a>
+                        <a href="">Shop Simple</a>
+                        <a href="">Shop Overlay Header</a>
+                        <a href="">Shop Sidebar</a>
+                        <a href="" >Shop List</a>
+                    </div>
+                    <div>
+                        <h3>Filter Layout</h3>
+                        <a href="">Sidebar</a>
+                        <a class="hotnav" href="">Filter Side Out</a>
+                        <a href="">Filter Dropdown</a>
+                        <a href="">Filter On Top</a>
+                        <a href="" class=" mb-20px">Filter Drawer</a>
+                        <h3>Shop Loader</h3>
+                        <a href="">Shop Pagination</a>
+                        <a class="hotnav" href="">Shop Infinity</a>
+                        <a href="">Shop Load More</a>
+                    </div>
+                    <div>
+                        <h3>Hover Style</h3>
+                        <a href="">Hover Style 1</a>
+                        <a href="">Hover Style 2</a>
+                        <a href="">Hover Style 3</a>
+                        <a class="hotnav" href="">Hover Style 4</a>
+                        <a class="hotnav" href="" class=" mb-20px">Hover Style 5</a>
+                        <h3>Woo Pages</h3>
+                        <a href="">Order Tracking</a>
+                        <a href="">Login</a>
+                        <a href="">Wishlist</a>
+                    </div>
+                    <div>
+                        <h3>Mini Cart</h3>
+                        <a href="">Side Out Light</a>
+                        <a href="">Side Out Dark</a>
+                        <a href="">Dropdown</a>
+                        <a href="" class=" mb-20px">Cart Page</a>
+                        <h3>Checkout Style</h3>
+                        <a href="">Checkout Classic</a>
+                        <a class="hotnav" href="">Checkout Mordern</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productpage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <div>
+                        <h3>Product Featured</h3>
+                        <a href="">Sticky ATC</a>
+                        <a href="">Video Inner</a>
+                        <a href="">Video Popup</a>
+                        <a href="">360 Degree</a>
+                        <a href="">Countdown</a>
+                        <a href="" class=" mb-20px">Buy Together</a>
+                        <h3>Description Style</h3>
+                        <a href="">Description Tab</a>
+                        <a href="">Description Accordion</a>
+                        <a href="" >Description Full Content</a>
+                        <a href="" >Description Vertical</a>
+                    </div>
+                    <div>
+                        <h3>Product Type</h3>
+                        <a href="">Simple Product</a>
+                        <a href="">Group Product</a>
+                        <a href="">Varieble Size Product</a>
+                        <a href="">Varieble Vintage Product</a>
+                        <a href="">External & Affiliate Product</a>
+                        <a href="" class=" mb-20px">Out of stock</a>
+                        <h3>Zoom Effect</h3>
+                        <a href="">Autozoom</a>
+                        <a class="hotnav" href="">Lens zoom</a>
+                        <a class="hotnav" href="">Magic zoom</a>
+                    </div>
+                    <div>
+                        <h3>Product Gallery</h3>
+                        <a href="">Scroll</a>
+                        <a href="">Left Thumbnail</a>
+                        <a href="">Right Thumbnail</a>
+                        <a href="">Bottom Thumbnail</a>
+                        <a href="">Outside Thumbnail</a>
+                        <a href="">Gird Style</a>
+                        <a href="">One Column</a>
+                        <a href="">Slider</a>
+                        <a href="">Lagre Gallery</a>
+                    </div>
+                    <div>
+                        <h3>Product Styles</h3>
+                        <a class="hotnav" href="">Clean</a>
+                        <a href="">Modern</a>
+                        <a class="hotnav" href="">Full Width</a>
+                        <a href="">Dark Background</a>
+                        <a href="">Light Background</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <div>
+                        <h3>Blog Layout</h3>
+                        <a href="">Blog Left Sidebar</a>
+                        <a href="">Blog Right Sidebar</a>
+                        <a class=" mb-20px" href="">Blog Without Sidebar</a>
+                        <h3>Blog Style</h3>
+                        <a href="">Blog List</a>
+                        <a href="">Blog Grid</a>
+                        <a href="" >Blog Modern</a>
+                        <a href="" >Blog Standar</a>
+                    </div>
+                    <div>
+                        <h3>Blog Format</h3>
+                        <a href="">Post format gallery</a>
+                        <a href="">Post format video</a>
+                        <a href="" class=" mb-20px">Post format audio</a>
+                        <h3>Post Layout</h3>
+                        <a href="">Sidebar</a>
+                        <a href="">One Column</a>
+                        <a href="">Prallax Image</a>
+                        <a href="">Simple Title</a>
+                        <a href="">Sticky Title</a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="pagepage">
+                <div class="uppermenu"><i onclick="NavCloser(this)" class="fa-solid fa-chevron-left"></i><h2>HOME</h2></div>
+                <div class="ovrl">
+                    <a href="/about.html">About Us</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="">Faq</a>
+                    <a href="">Page 404</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="navs d-flex justify-content-center align-items-center">
+            <a href=""><span class="navspans">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+            <a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+        </div> -->
+
+    </div>
+
+    <div id="bottommenu">
+        <div><i class="fa-solid fa-store"></i></div>
+        <div><i class="fa-regular fa-user"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div id="myBtn">
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+    </div>
+
+
+    <div class="section-1-header">
+        <!-- <div class="container"> -->
+            <div class="head-2">
+                <div class="head-2-all d-flex justify-content-between align-items-center">
+                    <div class="menuhamb">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="h2left d-flex align-items-center">
+                        <div class="logo d-flex align-items-center">
+                            <a href="/index.html"><img width="400" height="78" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/logo.png.webp" alt="Kowine – Wine Store WooCommerce Theme" data-lazy-src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/06/logo.png.webp" data-ll-status="loaded" class="entered lazyloaded"></a>                    
+                        </div>
+                        
+                    </div>
+                    <div class="h2middle">
+                        <ul class="menudropdown">
+                            <li class="normal"><a href=""><span class="navspans" id="homepage">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="homedropdown">
+                                    <ul>
+                                        <li><a href="">Home Categories</a></li>
+                                        <li><a href="/index.html">Home Classic</a></li>
+                                        <li><a href="">Home Clean</a></li>
+                                        <li><a href="">Home Elegant</a></li>
+                                        <li><a href="">Home Modern</a></li>
+                                        <li><a href="">Home Stronger</a></li>
+                                        <li><a href="">Home Stylish</a></li>
+                                        <li><a href="">Home Unique</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="shoppage"><a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="shopdropdown">
+                                    <div class="ovrl">
+                                        <div>
+                                            <h3>Shop Style</h3>
+                                            <a href="/shop.html">Shop Standart</a>
+                                            <a href="">Shop Full</a>
+                                            <a href="">Shop Only Categories</a>
+                                            <a href="">Shop Icon Categories</a>
+                                            <a href="">Shop Image Categories</a>
+                                            <a href="">Shop Sub Categories</a>
+                                            <a href="">Shop Simple</a>
+                                            <a href="">Shop Overlay Header</a>
+                                            <a href="">Shop Sidebar</a>
+                                            <a href="" >Shop List</a>
+                                        </div>
+                                        <div>
+                                            <h3>Filter Layout</h3>
+                                            <a href="">Sidebar</a>
+                                            <a class="hotnav" href="">Filter Side Out</a>
+                                            <a href="">Filter Dropdown</a>
+                                            <a href="">Filter On Top</a>
+                                            <a href="" class=" mb-20px">Filter Drawer</a>
+                                            <h3>Shop Loader</h3>
+                                            <a href="">Shop Pagination</a>
+                                            <a class="hotnav" href="">Shop Infinity</a>
+                                            <a href="">Shop Load More</a>
+                                        </div>
+                                        <div>
+                                            <h3>Hover Style</h3>
+                                            <a href="">Hover Style 1</a>
+                                            <a href="">Hover Style 2</a>
+                                            <a href="">Hover Style 3</a>
+                                            <a class="hotnav" href="">Hover Style 4</a>
+                                            <a class="hotnav" href="" class=" mb-20px">Hover Style 5</a>
+                                            <h3>Woo Pages</h3>
+                                            <a href="">Order Tracking</a>
+                                            <a href="">Login</a>
+                                            <a href="">Wishlist</a>
+                                        </div>
+                                        <div>
+                                            <h3>Mini Cart</h3>
+                                            <a href="">Side Out Light</a>
+                                            <a href="">Side Out Dark</a>
+                                            <a href="">Dropdown</a>
+                                            <a href="" class=" mb-20px">Cart Page</a>
+                                            <h3>Checkout Style</h3>
+                                            <a href="">Checkout Classic</a>
+                                            <a class="hotnav" href="">Checkout Mordern</a>
+                                        </div>
+                                    </div>
+                                </div></li>
+                            
+                            <li id="productpage"><a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="productdropdown">
+                                    <div class="ovrl">
+                                        <div>
+                                            <h3>Product Featured</h3>
+                                            <a href="">Sticky ATC</a>
+                                            <a href="">Video Inner</a>
+                                            <a href="">Video Popup</a>
+                                            <a href="">360 Degree</a>
+                                            <a href="">Countdown</a>
+                                            <a href="" class=" mb-20px">Buy Together</a>
+                                            <h3>Description Style</h3>
+                                            <a href="">Description Tab</a>
+                                            <a href="">Description Accordion</a>
+                                            <a href="" >Description Full Content</a>
+                                            <a href="" >Description Vertical</a>
+                                        </div>
+                                        <div>
+                                            <h3>Product Type</h3>
+                                            <a href="">Simple Product</a>
+                                            <a href="">Group Product</a>
+                                            <a href="">Varieble Size Product</a>
+                                            <a href="">Varieble Vintage Product</a>
+                                            <a href="">External & Affiliate Product</a>
+                                            <a href="" class=" mb-20px">Out of stock</a>
+                                            <h3>Zoom Effect</h3>
+                                            <a href="">Autozoom</a>
+                                            <a class="hotnav" href="">Lens zoom</a>
+                                            <a class="hotnav" href="">Magic zoom</a>
+                                        </div>
+                                        <div>
+                                            <h3>Product Gallery</h3>
+                                            <a href="">Scroll</a>
+                                            <a href="">Left Thumbnail</a>
+                                            <a href="">Right Thumbnail</a>
+                                            <a href="">Bottom Thumbnail</a>
+                                            <a href="">Outside Thumbnail</a>
+                                            <a href="">Gird Style</a>
+                                            <a href="">One Column</a>
+                                            <a href="">Slider</a>
+                                            <a href="">Lagre Gallery</a>
+                                        </div>
+                                        <div>
+                                            <h3>Product Styles</h3>
+                                            <a class="hotnav" href="">Clean</a>
+                                            <a href="">Modern</a>
+                                            <a class="hotnav" href="">Full Width</a>
+                                            <a href="">Dark Background</a>
+                                            <a href="">Light Background</a>
+                                        </div>
+                                    </div>
+                                </div></li>
+                            </li>
+                            <li id="blogpage"><a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="blogdropdown">
+                                    <div class="ovrl">
+                                        <div>
+                                            <h3>Blog Layout</h3>
+                                            <a href="">Blog Left Sidebar</a>
+                                            <a href="">Blog Right Sidebar</a>
+                                            <a class=" mb-20px" href="">Blog Without Sidebar</a>
+                                            <h3>Blog Style</h3>
+                                            <a href="">Blog List</a>
+                                            <a href="">Blog Grid</a>
+                                            <a href="" >Blog Modern</a>
+                                            <a href="" >Blog Standar</a>
+                                        </div>
+                                        <div>
+                                            <h3>Blog Format</h3>
+                                            <a href="">Post format gallery</a>
+                                            <a href="">Post format video</a>
+                                            <a href="" class=" mb-20px">Post format audio</a>
+                                            <h3>Post Layout</h3>
+                                            <a href="">Sidebar</a>
+                                            <a href="">One Column</a>
+                                            <a href="">Prallax Image</a>
+                                            <a href="">Simple Title</a>
+                                            <a href="">Sticky Title</a>
+                                        </div>
+                                        <div>
+                                            <h3>Recent Post</h3>
+                                            <div class="post d-flex">
+                                                <div class="pl">
+                                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG1-720x484.jpg.webp" alt="">
+                                                </div>
+                                                <div class="pr">
+                                                    <a class="spa">Traveling Solo Is Awesome</a>
+                                                    <p class="spp">May 30, 2018 | 4 Comments</p>
+                                                </div>
+                                            </div>
+                                            <div class="post d-flex">
+                                                <div class="pl">
+                                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG2-720x484.jpg.webp" alt="">
+                                                </div>
+                                                <div class="pr">
+                                                    <a class="spa">A Beautiful Sunday Morning</a>
+                                                    <p class="spp">May 30, 2018 | 1 Comments</p>
+                                                </div>
+                                            </div>
+                                            <div class="post d-flex">
+                                                <div class="pl">
+                                                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/05/BLOG3-720x484.jpg.webp" alt="">
+                                                </div>
+                                                <div class="pr">
+                                                    <a class="spa">Kitchen Inspired On Japanese</a>
+                                                    <p class="spp">May 30, 2018 | 1 Comments</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div></li>
+                            <li class="normal"><a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+                                <div class="pagedropdown">
+                                    <ul>
+                                        <li><a href="/about.html">About Us</a></li>
+                                        <li><a href="/contact.html">Contact</a></li>
+                                        <li><a href="">Faq</a></li>
+                                        <li><a href="">Page 404</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <div class="navs d-flex justify-content-center align-items-center">
+                            <a href=""><span class="navspans">HOME</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">SHOP</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">PRODUCT</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">BLOG</span><i class="navi fa-solid fa-angle-down"></i></a>
+                            <a href=""><span class="navspans">PAGE</span><i class="navi fa-solid fa-angle-down"></i></a>
+                        </div> -->
+
+                    </div>
+                    <div class="h2right d-flex align-items-center justify-content-end">
+                        <div class="login d-flex align-items-center">
+                            <a id="reslogin" href="#">LOGIN / REGISTER</a>
+                        </div>
+                        <div class="navs-2">
+                            <i id="resnav2ico" class="fa-solid fa-magnifying-glass"></i>
+                            <i id="resnav2ico" class="fa-regular fa-heart"></i>
+                            <a href="/basket.html"><i class="fa-solid fa-bag-shopping"><span id="shopcartcount">0</span></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </div>
+
+
+
+    <div class="mycontainer">
+        <div class="productsrow">
+                            
+            <div class="drink">
+                <!-- <div class="mininavs">
+                    <div class="bag">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div> -->
+                <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-01.jpg.webp)">
+                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-01.jpg.webp" />
+                </figure>
+                
+
+                
+                <div class="slider4">
+                    <div><img class="activepic" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-01-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2018/10/Wine-01-03.jpg" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2018/10/Wine-01-05.jpg" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-07-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2018/10/Wine-01-09.jpg" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-11-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-13-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-15-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-17-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-19-450x450.jpg.webp" alt=""></div>
+                    <div><img src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-21-450x450.jpg.webp" alt=""></div>
+                </div>
+                <!-- <img class="sec" src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/05/Product17-450x450.jpg"> -->
+                <!-- <img class="fst" src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/05/Product11-450x450.jpg" alt=""> -->
+            </div>
+            <div class="srt">
+                <div class="srtt">
+                    <div class="top">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>(<span>1</span> customer review)</p>
+                        
+                        </div>
+                    <a class="smltxt" href="#">Aliquam id lorem vel nisl blandit dapibus</a>
+                    <div class="bottom"><p>$<span>90</span>.00</p></div>
+                </div>
+                <div class="srtm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="options d-flex flex-column justify-content-around">
+                        <div class="otop d-flex justify-content-between">
+                            <div class="ocounter">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>1</span>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <span class=" d-none">10</span>
+
+                            <button onclick="AddBasket(this)">ADD TO CART</button>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="obottom">
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="srtb">
+                    <span>Categories: <a href="">Red Wine</a>, <a href="">Sparkling</a></span>
+                    <span>Tags: <a href="">Fashion</a>, <a href="">Women</a></span>
+                    <span>Share: <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin-in"></i></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="desrev">
+    <div class="mycontainer">
+        <div class="dr-all">
+            <div class="dr-top d-flex justify-content-center">
+                <p data-tab="tab1" onclick="Tabs(this)" class="activetabsbtn">Description</p>
+                <p data-tab="tab2" onclick="Tabs(this)" >Reviews (1)</p>
+            </div>
+            <div class="dr-bottom">
+                <div id="tab1" class="activetab">
+                    <p class=" mb-14px">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <p class=" mb-14px">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                </div>
+                <div id="tab2" class="tabs">
+                    <h2 class="reviewtitle">1 review for <span>In hac habitasse platea dictumst tempor vet</span></h2>
+                    <div class="review">
+                        <div class="revtop">
+                            <div class="p1">
+                                <img class=" img-fluid" src="https://secure.gravatar.com/avatar/53444f91e698c0c7caa2dbc3bdbf93fc?s=60&d=mm&r=g" alt="">
+                            </div>
+                            <div class="p2">
+                                <p>WPBINGO</p>
+                                <span>November 6, 2020</span>
+                            </div>
+                        </div>
+                        <p class="p3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                        </p>
+                    </div>
+                    <div class="addreview">
+                        <i class="fa-solid fa-pen me-15px d-inline-block"></i>
+                        <span>ADD A REVIEW</span>
+                    </div>
+                    <div class="revarea">
+                        <span class="revrev">Your email address will not be published. Required fields are marked <span>*</span></span>
+                        <span class="revrating">
+                            Your rating <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </span>
+                        <div class="revareainner">
+                            <div class="ratop">
+                                <textarea name="yourpreviews" placeholder="Your Reviews *" id="yp" cols="99" rows="10"></textarea>
+                            </div>
+                            <div class="rabottom">
+                                <input class="inputsss" type="text" placeholder="Name *">
+                                <input class="inputsss" type="email" placeholder="Email *">
+                                <input type="button" value="SUBMIT" id="rasubmit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relatedproducts">
+    <div class="mycontainer">
+        <div class="s3-middle">
+            <div class="s3-middle-top d-flex justify-content-center">
+                <h4 class="text-center">Related Products</h4>
+            </div>
+            <div class="s3-middle-middle">
+                <div class="slider3">
+                    <div>
+                        <div class="drink">
+                            <div class="mininavs">
+                                <span class=" d-none">10</span>
+                                <div class="bag" onclick="AddBasket(this)">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="discount"><span>-10%</span></div>
+                            <div class="hot"><span>Hot</span></div>
+                            <img class="sec" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/Product26-450x450.jpg.webp">
+                            <img class="fst" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-03-450x450.jpg.webp" alt="">
+                        </div>
+                        <div class="top">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>{<span>1</span> review)</p>
+                        </div>
+                        <a class="smltxt" href="#">In hac habitasse platea dictumst tempor vet</a>
+                        <div class="bottom"><p>$<span>100.00</span></p></div>
+                    </div>
+                    <div>
+                        <div class="drink">
+                            <div class="mininavs">
+                                <span class=" d-none">10</span>
+                                <div class="bag" onclick="AddBasket(this)">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="discount"><span>-10%</span></div>
+                            <div class="hot"><span>Hot</span></div>
+                            <img class="sec" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/Product26-450x450.jpg.webp">
+                            <img class="fst" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-03-450x450.jpg.webp" alt="">
+                        </div>
+                        <div class="top">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>{<span>1</span> review)</p>
+                        </div>
+                        <a class="smltxt" href="#">In hac habitasse platea dictumst tempor vet</a>
+                        <div class="bottom"><p>$<span>100.00</span></p></div>
+                    </div>
+                    <div>
+                        <div class="drink">
+                            <div class="mininavs">
+                                <span class=" d-none">10</span>
+                                <div class="bag" onclick="AddBasket(this)">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="discount"><span>-10%</span></div>
+                            <div class="hot"><span>Hot</span></div>
+                            <img class="sec" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/Product26-450x450.jpg.webp">
+                            <img class="fst" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-03-450x450.jpg.webp" alt="">
+                        </div>
+                        <div class="top">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>{<span>1</span> review)</p>
+                        </div>
+                        <a class="smltxt" href="#">In hac habitasse platea dictumst tempor vet</a>
+                        <div class="bottom"><p>$<span>100.00</span></p></div>
+                    </div>
+                    <div>
+                        <div class="drink">
+                            <div class="mininavs">
+                                <span class=" d-none">10</span>
+                                <div class="bag" onclick="AddBasket(this)">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="discount"><span>-10%</span></div>
+                            <div class="hot"><span>Hot</span></div>
+                            <img class="sec" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/Product26-450x450.jpg.webp">
+                            <img class="fst" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-03-450x450.jpg.webp" alt="">
+                        </div>
+                        <div class="top">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>{<span>1</span> review)</p>
+                        </div>
+                        <a class="smltxt" href="#">In hac habitasse platea dictumst tempor vet</a>
+                        <div class="bottom"><p>$<span>100.00</span></p></div>
+                    </div>
+                    <div>
+                        <div class="drink">
+                            <div class="mininavs">
+                                <span class=" d-none">10</span>
+                                <div class="bag" onclick="AddBasket(this)">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="discount"><span>-10%</span></div>
+                            <div class="hot"><span>Hot</span></div>
+                            <img class="sec" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2021/05/Product26-450x450.jpg.webp">
+                            <img class="fst" src="https://wpbingosite.com/wordpress/kowine/wp-content/webp-express/webp-images/uploads/2018/10/Wine-01-03-450x450.jpg.webp" alt="">
+                        </div>
+                        <div class="top">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>{<span>1</span> review)</p>
+                        </div>
+                        <a class="smltxt" href="#">In hac habitasse platea dictumst tempor vet</a>
+                        <div class="bottom"><p>$<span>100.00</span></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+</div>
+
+
+
+
+
+    <footer>
+        <div class="foot-all ">
+            <div class="mycontainer d-flex justify-content-between">
+                <div class="contactus">
+                    <h2>CONTACT US</h2>
+                    <div class="ftxt">
+                        <p><strong>Head Office:</strong> 26 Wyle Cop, Shrewsbury,</p>
+                    <p>Shropshire, SY1 1XD</p>
+                    <p><strong>Tel:</strong> 01743 234500</p>
+                    <p><strong>Email:</strong> support&kowine.com</p>
+                    </div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                
+                </div>
+                <div class="customerservice">
+                    <h2>CUSTOMER SERVICES</h2>
+                    <a href="">Contact & FA</a>
+                    <a href="">Track Your Orde</a>
+                    <a href="">Returns & Refunds</a>
+                    <a href="">Shipping & Deliver</a>
+                    <a href="">Interest Free Financ</a>
+                    <a href="">Cipmoney</a>
+                </div>
+                <div class="aboutus">
+                    <h2>ABOUT US</h2>
+                    <a href="">
+                        Our story
+                    </a><a href="">
+                        The team
+                    </a><a href="">
+                        The team
+                    </a><a href="">
+                        Jobs
+                    </a><a href="">
+                        Blog
+                    </a><a href="">
+                        Contact
+                    </a>
+                </div>
+                <div class="discovermore">
+                    <h2>DISCOVER MORE</h2>
+                    <a href="">
+                        Twiter
+                    </a><a href="">
+                        Facebook
+                    </a><a href="">
+                        Instagram
+                    </a><a href="">
+                        Pinterest
+                    </a><a href="">
+                        Jobs
+                    </a><a href="">
+                        Contact
+                    </a>
+                </div>
+        
+            </div>
+        </div>
+        <div class="foot-bottom ">
+            <div class="mycontainer d-flex justify-content-between">
+                <div class="fbl">
+                    <p>Copyright © 2021 Kowines Ltd.</p>
+                </div>
+                <div class="fbr">
+                    <img src="https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2020/06/payment.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.simplePagination.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="/js/basket.js"></script> -->
+    <!-- <script src="/js/script.js"></script> -->
+    <script src="/js/detail.js"></script>
+</body>
+</html>
